@@ -1,73 +1,156 @@
-# Welcome to your Lovable project
+# VoiceAssist – Smart Voice Assistant (Frontend)
 
-## Project info
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-**URL**: https://lovable.dev/projects/89d68eb9-d1f9-44b7-bd1b-6128b837039e
+Modern, beautiful, and extensible web app for interacting with a voice assistant through real-time speech transcription and command execution.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+- **Voice Command Execution**: Speak your command and watch it happen instantly.
+- **Real-Time Transcription**: See your speech transcribed in real time.
+- **Interactive Dashboard**: Get instant feedback and results from your assistant.
+- **Smart Actions**: Perform actions like translations, file opening, note-taking, and more.
+- **Responsive UI**: Built with Tailwind CSS and shadcn-ui for a clean, modern look.
+- **Customizable**: Easily extend or tweak the UI/UX to your liking.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/89d68eb9-d1f9-44b7-bd1b-6128b837039e) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🖥️ Project Structure
 
-**Use your preferred IDE**
+```
+voice_os_fe/
+├── public/
+├── src/
+│   ├── components/         # Reusable UI components (e.g., Button, Sidebar, Carousel, etc.)
+│   ├── pages/              # Main app pages (Landing, Dashboard, NotFound, etc.)
+│   ├── index.css           # Tailwind and custom styles
+│   ├── App.tsx             # Main app routes and providers
+│   └── vite-env.d.ts
+├── index.html              # App entry HTML, meta tags, and external scripts
+├── tailwind.config.ts      # Tailwind CSS configuration
+├── vite.config.ts          # Vite build configuration
+├── postcss.config.js       # PostCSS config for Tailwind
+├── eslint.config.js        # ESLint configuration
+└── README.md
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## ✨ Demo
 
-Follow these steps:
+**Landing Page Preview:**
+
+> Your Smart Assistant at Your Command  
+> Experience the next generation of voice assistants. Speak your command. Get instant results.
+
+---
+
+## ⚡ Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) & [npm](https://www.npmjs.com/)  
+  (Recommended: Install via [nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
+
+### Quickstart
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# 1. Clone the repository
+git clone https://github.com/VarunChopra11/voice_os_fe.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 2. Go to the project directory
+cd voice_os_fe
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 3. Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app should now be running at [http://localhost:8080](http://localhost:8080)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🔧 Editing the Code
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+You can:
 
-## What technologies are used for this project?
+- **Use Lovable:**  
+  Visit your [Lovable Project Dashboard](https://lovable.dev/projects/89d68eb9-d1f9-44b7-bd1b-6128b837039e) and prompt for changes.  
+  Changes made via Lovable are automatically committed here.
+- **Use your IDE locally:**  
+  Clone, edit, and push. Changes sync with Lovable.
+- **Edit in GitHub:**  
+  Navigate and click the pencil icon on any file.
+- **Use GitHub Codespaces:**  
+  Click "Code" > "Codespaces" > "New codespace" to launch a live dev environment in your browser.
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🛠️ Technologies Used
 
-## How can I deploy this project?
+- [Vite](https://vitejs.dev/) – Lightning-fast frontend tooling
+- [React](https://react.dev/) – UI library
+- [TypeScript](https://www.typescriptlang.org/) – Typed JavaScript
+- [shadcn-ui](https://ui.shadcn.com/) – Modern accessible React components
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first styling
+- [Radix UI](https://www.radix-ui.com/) – Unstyled accessible component primitives
 
-Simply open [Lovable](https://lovable.dev/projects/89d68eb9-d1f9-44b7-bd1b-6128b837039e) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 🌍 Deployment
 
-Yes, you can!
+- **With Lovable:**  
+  Open your [Lovable Project](https://lovable.dev/projects/89d68eb9-d1f9-44b7-bd1b-6128b837039e) and click Share → Publish.
+- **Custom Domain:**  
+  Go to Project > Settings > Domains in Lovable, and click "Connect Domain".  
+  [Read the guide](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 📝 Environment & Configuration
+
+- No custom environment variables are required for basic setup.
+- To connect to a backend voice assistant API, configure the `/execute` endpoint as needed.
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repo
+2. Create your feature branch: `git checkout -b feat/your-feature`
+3. Commit your changes: `git commit -am 'Add new feature'`
+4. Push to the branch: `git push origin feat/your-feature`
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🙋 FAQ
+
+### How does it work?
+- Click the microphone button, speak your command, and get instant results (transcription, translation, note-taking, and more) shown in the dashboard.
+
+### Can I use my own backend?
+- Yes! The frontend fetches from `/execute`, so you can point it to any compatible backend.
+
+### Want to extend or style?
+- All UI is component-based and styled with Tailwind/shadcn-ui—customize freely!
+
+---
+
+## 📫 Contact
+
+For issues or suggestions, open an [issue](https://github.com/VarunChopra11/voice_os_fe/issues) or reach out via GitHub.
+
+---
+
+> _Built with ❤️ by [VarunChopra11](https://github.com/VarunChopra11)_
